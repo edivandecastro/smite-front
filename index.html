@@ -5,16 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="theme-classic-all.css">
-  <script type="text/javascript" src="ext-all-debug.js"></script>
+  <link rel="stylesheet" href="ext/theme/css/theme-classic-all.css">
+  <script type="text/javascript" src="ext/src/ext-debug.js"></script>
 
   <title>Document</title>
 </head>
 <body></body>
 <script type="text/javascript">
+  Ext.Loader.setConfig({
+		enabled: true,
+		paths: {
+			'Smite' : 'src/app'
+		}
+	});
 
-  Ext.onReady(function() {
+	Ext.onReady(function(){
 
-  });
+	});
 </script>
 </html>
