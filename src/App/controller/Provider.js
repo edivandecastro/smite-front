@@ -1,12 +1,14 @@
 Ext.define('Smite.controller.Provider', {
   extend: 'Ext.app.Controller',
 
+  requires: ['Smite.view.GridProviders'],
+
   models: ['Smite.model.Provider'],
 
   stores: ['Smite.store.Providers'],
 
   control: {
-    'providers': {
+    'gridproviders': {
       render: 'onGridRender'
     },
     'button#showGridProvider': {
@@ -37,7 +39,7 @@ Ext.define('Smite.controller.Provider', {
         minimizable: true,
         items: [
           {
-            xtype: 'providers'
+            xtype: 'gridproviders'
           },
         ]
       });

@@ -1,6 +1,6 @@
-Ext.define('Smite.view.Providers', {
+Ext.define('Smite.view.GridProviders', {
   extend: 'Ext.grid.Panel',
-  alias: 'widget.providers',
+  alias: 'widget.gridproviders',
 
   requires: ['Smite.store.Providers'],
 
