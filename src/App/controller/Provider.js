@@ -25,24 +25,9 @@ Ext.define('Smite.controller.Provider', {
     var windowProvider = panel.child('#window-provider');
 
     if (windowProvider === null) {
-      var window = Ext.create('Ext.window.Window', {
-        id: 'window-provider',
-        xtype: 'window',
-        width: 1100,
-        height: 800,
-        constrain: true,
-        expandOnShow: false,
-        flex: 410,
-        layout: 'fit',
-        maximizable: true,
-        maximized: true,
-        minimizable: true,
-        items: [
-          {
-            xtype: 'gridproviders'
-          },
-        ]
-      });
+      var window = Ext.create('Smite.components.FactoryWindow', {
+        items: [{ xtype: 'gridproviders' }]
+      })
 
       panel.add(window);
       window.show();
