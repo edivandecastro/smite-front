@@ -1,22 +1,15 @@
 Ext.define('Smite.Application', {
-  extend: 'Ext.container.Viewport',
+  extend: 'Ext.app.Application',
+  name: 'Smite',
 
-  layout: 'fit',
+  requires: [
+    'Smite.view.Viewport',
+    'Smite.controller.Main',
+  ],
 
-  requires: ['Smite.view.Menu'],
+  controllers: ['Smite.controller.Main'],
 
-  items: [{
-    xtype: 'panel',
-    title: 'SMITE',
-
-    items: [{
-      dockedItems: [{
-        xtype: 'toolbar-overflowbar',
-        dock: 'top',
-        overflowHandler: 'menu'
-      }]
-    }]
-  }],
-
-  renderTo: 'container',
+  launch:  function() {
+    Ext.create('Smite.view.Viewport');
+  }
 });
