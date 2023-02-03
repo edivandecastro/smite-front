@@ -7,6 +7,6 @@ Ext.define('Smite.view.Container', {
 
   layout: 'fit',
   border: false,
-  height: 850,
+  height: 836,
   margin: 0,
 });
