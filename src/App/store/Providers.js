@@ -4,7 +4,7 @@ Ext.define('Smite.store.Providers', {
   xtype: 'store-provider',
 
   model: 'Smite.model.Provider',
-  pageSize: 30,
+  pageSize: 34,
 
   proxy: {
     type: 'rest',
