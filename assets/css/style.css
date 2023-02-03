@@ -45,3 +45,23 @@
 .icon-grid {
   background-image:url(images/icons/fam/application_view_detail.png)
 }
+
+.icon-add {
+  background-image:url(images/icons/fam/add.png)
+}
+
+.icon-save {
+  background-image:url(images/icons/fam/bullet_disk.png)
+}
+
+.icon-delete {
+  background-image:url(images/icons/fam/delete.png)
+}
+
+.icon-cancel {
+  background-image:url(images/icons/fam/cancel.png)
+}
+
+.icon-form {
+  background-image:url(images/icons/fam/application_form_add.png)
+}
